@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d2c;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-fluid .navbar-nav a{
+    margin-left: 2rem;
+}
+.container-fluid  a:hover{
+    color: rgb(237, 150, 35);
+}
+
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero h1 .highlight {
+    color: #D48BFF;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.hero .btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    border: none;
+}
+.illustration {
+    margin-top: 50px;
+}
+.card-custom {
+    background-color: #f4f0ff;
+}
+.card-custom .card-body {
+    text-align: center;
+    border:1px solid red;
+    border-radius: 1rem;
+    
+}
+.icon {
+    font-size: 40px;
+    color: #ff416c;
+    margin-bottom: 15px;
+}
+.card-title {
+    font-weight: bold;
+}
+
+.footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+  ul {
+    padding:0;
+    list-style: none;
+    text-align:center;
+    font-size:18px;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+ ul a {
+    color:inherit;
+    text-align: center;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+ul a:hover {
+    opacity:1;
+    color: #ff4b2b;
+  }
+  
+.social {
+    text-align:center;
+    padding-bottom:25px;
+    margin-top: 2rem;
+  }
+  
+.social a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+.social > a:hover {
+    opacity:0.9;
+    color: #ff4b2b;
+  }
+  
+.copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:1rem;
+    color:#ed3838;
+    margin-bottom:0;
+  }
+
+  .sidebar {
+    height: 30vh;
+    padding-top: 70px;
+}
+.sidebar a {
+    color:black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight:500;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+.content h1 {
+    font-size: 10rem;
+   
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content p{
+  font-weight: bold;
+  font-size: 20px;
+  color:  #dc792d;
+}
+
+
+/* infinte slidebar */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width:100%;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+
